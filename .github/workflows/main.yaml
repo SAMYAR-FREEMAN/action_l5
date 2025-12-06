@@ -6,11 +6,11 @@ on:
     branches: [main]
 
 env:
-  PORT: ${secrets.PORT}
+  PORT: ${{secrets.PORT}}
 jobs:
   test_project:
     env:
-      PassWord: ${secrets.PassWord}
+      PassWord: ${{secrets.PassWord}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
