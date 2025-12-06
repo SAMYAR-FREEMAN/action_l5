@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 env:
-  PORT: ${secrets.Port}
+  PORT: ${secrets.PORT}
 jobs:
   test_project:
     env:
